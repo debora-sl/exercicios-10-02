@@ -11,7 +11,7 @@ testarNumero.addEventListener('click', function () {
     var numeroTentativa = parseInt(document.getElementById("numeroTentativa").value);
 
     if (numeroTentativa < 1 || numeroTentativa > 100) {
-        var resultadoErroHTML = document.getElementById("resultadoErroHTML").innerHTML = `Ops, você inseriu ${numeroTentativa} que é um número menor que 1 ou maior que 100.`;
+        var resultadoErroHTML = document.getElementById("resultadoHTML").innerHTML = `Ops, você inseriu ${numeroTentativa} que é um número menor que 1 ou maior que 100.`;
         limparInput();
     } else if (numeroTentativa == numeroAleatorio) {
         console.log('Acertou!');
