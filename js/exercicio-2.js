@@ -10,8 +10,12 @@ botaoSomar.addEventListener('click', function () {
     // chamando a função somar
     somar(numero1, numero2);
 
+    // limpar os campos
+    limparInput();
+
 })
 
+// função que recebe 2 números e soma
 function somar(numero1, numero2) {
 
     var resultado = numero1 + numero2;
@@ -20,8 +24,13 @@ function somar(numero1, numero2) {
     var resultadoHTML = document.getElementById("resultadoHTML").innerHTML = `Resultado: a soma de ${numero1} + ${numero2} = ${resultado}`;
 
     return resultado;
-
 }
+
+// função para limpar os inputs
+function limparInput() {
+    document.getElementById("numero1").value = '';
+    document.getElementById("numero2").value = '';
+};
 
 
 

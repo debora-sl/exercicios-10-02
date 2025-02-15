@@ -14,8 +14,15 @@ checarNumero.addEventListener('click', function () {
         // inserindo o resultado no HTML
         var resultadoHTML = document.getElementById("resultadoHTML").innerHTML = `Resultado: o número ${numero} é: Ímpar.`;
     }
+
+    // limpar os campos
+    limparInput();
 });
 
+// função para limpar o input
+function limparInput() {
+    document.getElementById("numero").value = '';
+};
 
 
 
