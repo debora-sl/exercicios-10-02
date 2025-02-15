@@ -1,0 +1,103 @@
+/* Reset básico para padronizar estilos entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Removendo estilos de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Removendo sublinhado dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Garantindo que os elementos ocupem toda a largura disponível */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f8f9fa; /* Cor de fundo opcional */
+    color: #333; /* Cor do texto padrão */
+}
+
+/* Removendo estilos padrões de botões */
+button, input, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Melhorando a aparência de imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* home/ index */
+.home-titulo{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgb(187, 71, 245);
+    color: snow;
+}
+
+.home-titulo a{
+    margin-top: 1em;
+    margin-left: 53em;
+
+}
+
+.home-titulo a:hover {
+    text-decoration: underline;
+    color: rgb(230, 225, 225);
+}
+
+/* home/ principal */
+.home-principal{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1em;
+    width: 100%;
+    height: 92.3vh;
+
+    background-color: rgb(235, 205, 250);
+}
+
+.home-principal-titulo{
+    border-bottom: thin solid rgb(187, 71, 245);
+    width: 400px;
+
+    text-align: center;
+}
+
+.home-principal-lista{
+    padding: 1em;
+}
+
+.home-principal-lista a{
+
+    padding: 0.5em;
+}
+
+.home-principal-lista a:hover{
+    text-decoration: underline;
+    color: rgb(12, 5, 5);
+}
+
+
+
